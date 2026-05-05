@@ -1,6 +1,6 @@
 ﻿#  KPI Dashboard Industriel
 Application personnelle pour mettre en pratique les concepts d'indicateurs industriels
- **[https://ephraim1110.github.io/KPI-Dashboard-Calculator/](#)** 
+ **[https://ephraim1110.github.io/KPI-Dashboard-Calculator/]** 
 
 
 ##  À quoi ça sert ?
