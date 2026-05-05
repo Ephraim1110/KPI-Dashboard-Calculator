@@ -6,90 +6,103 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #1a1a1a;
+  background-color: #0f1117;
   color: #e0e0e0;
-  padding: 2rem;
+  padding: 2.5rem;
+  min-height: 100vh;
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ffffff;
+  letter-spacing: -0.5px;
   margin-bottom: 0.3rem;
 }
 
+h1 span {
+  color: #4a9eff;
+}
+
 p {
-  color: #aaaaaa;
-  margin-bottom: 1rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
 }
 
 /* ONGLETS */
 .tabs {
   display: flex;
-  gap: 10px;
-  margin-bottom: 2rem;
+  gap: 8px;
+  margin-bottom: 2.5rem;
   flex-wrap: wrap;
+  border-bottom: 1px solid #222;
+  padding-bottom: 1rem;
 }
 
 .tab {
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #444;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
   background: transparent;
-  color: #cccccc;
+  color: #888;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
+  font-weight: 500;
   transition: all 0.2s;
+  letter-spacing: 0.3px;
 }
 
 .tab:hover {
-  border-color: #888;
-  color: white;
+  border-color: #444;
+  color: #ccc;
+  background: #1a1a1a;
 }
 
 .tab.active {
-  background: #2a2a2a;
-  border-color: #666;
-  color: white;
-  font-weight: 500;
+  background: #1a2a3a;
+  border-color: #4a9eff;
+  color: #4a9eff;
 }
 
 /* SECTIONS */
-.section {
-  display: none;
-}
-
-.section.active {
-  display: block;
-}
+.section { display: none; }
+.section.active { display: block; }
 
 .section-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #1e1e1e;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 0.85rem;
 }
 
 /* FORMULE BOX */
 .formula-box {
-  background: #2a2a2a;
-  border-radius: 10px;
-  padding: 14px 18px;
-  font-size: 0.9rem;
-  color: #aaaaaa;
+  background: #13181f;
+  border: 1px solid #1e2a3a;
+  border-left: 3px solid #4a9eff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: #888;
   margin-bottom: 1.5rem;
+  font-family: 'Courier New', monospace;
 }
 
 .formula-box strong {
-  color: white;
+  color: #4a9eff;
 }
 
 /* INPUTS */
 .inputs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
   margin-bottom: 1.5rem;
 }
 
@@ -100,82 +113,95 @@ p {
 }
 
 .input-group label {
-  font-size: 0.85rem;
-  color: #aaaaaa;
+  font-size: 0.78rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
 .input-group input {
-  background: #2a2a2a;
-  border: 1px solid #444;
-  border-radius: 8px;
-  padding: 12px 14px;
-  color: white;
-  font-size: 1rem;
+  background: #13181f;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
 }
 
 .input-group input:focus {
   outline: none;
-  border-color: #666;
+  border-color: #4a9eff;
+  background: #141c24;
 }
 
 .input-group .unit {
-  font-size: 0.75rem;
-  color: #666;
+  font-size: 0.72rem;
+  color: #444;
 }
 
 /* BOUTON */
 .calc-btn {
-  padding: 12px 24px;
-  background: #2a2a2a;
-  border: 1px solid #555;
-  border-radius: 8px;
-  color: white;
-  font-size: 0.95rem;
+  padding: 10px 22px;
+  background: #1a2a3a;
+  border: 1px solid #4a9eff;
+  border-radius: 6px;
+  color: #4a9eff;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
   margin-bottom: 1.5rem;
   transition: all 0.2s;
+  letter-spacing: 0.3px;
 }
 
 .calc-btn:hover {
-  background: #333;
-  border-color: #888;
+  background: #4a9eff;
+  color: #0f1117;
 }
 
 /* RÉSULTATS */
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
 }
 
 .kpi-card {
-  background: #2a2a2a;
+  background: #13181f;
+  border: 1px solid #1e1e1e;
   border-radius: 10px;
   padding: 14px 16px;
+  transition: border-color 0.2s;
+}
+
+.kpi-card:hover {
+  border-color: #2a2a2a;
 }
 
 .kpi-label {
-  font-size: 0.75rem;
-  color: #888;
-  margin-bottom: 6px;
+  font-size: 0.72rem;
+  color: #555;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .kpi-value {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
 }
 
-.kpi-value.good { color: #4caf50; }
-.kpi-value.warn { color: #ff9800; }
-.kpi-value.bad  { color: #f44336; }
+.kpi-value.good { color: #22c55e; }
+.kpi-value.warn { color: #f59e0b; }
+.kpi-value.bad  { color: #ef4444; }
 
 .kpi-bench {
-  font-size: 0.75rem;
-  color: #555;
-  margin-top: 4px;
+  font-size: 0.7rem;
+  color: #444;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
