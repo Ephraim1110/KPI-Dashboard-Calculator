@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  color: #aaaaaa;
+  margin-bottom: 1rem;
+}
+
+/* ONGLETS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: transparent;
+  color: #cccccc;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #888;
+  color: white;
+}
+
+.tab.active {
+  background: #2a2a2a;
+  border-color: #666;
+  color: white;
+  font-weight: 500;
+}
+
+/* SECTIONS */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 1.5rem;
+}
+
+/* FORMULE BOX */
+.formula-box {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-bottom: 1.5rem;
+}
+
+.formula-box strong {
+  color: white;
+}
+
+/* INPUTS */
+.inputs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+.input-group input {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: white;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.input-group .unit {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* BOUTON */
+.calc-btn {
+  padding: 12px 24px;
+  background: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: all 0.2s;
+}
+
+.calc-btn:hover {
+  background: #333;
+  border-color: #888;
+}
+
+/* RÉSULTATS */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.kpi-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.kpi-label {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.kpi-value {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+}
+
+.kpi-value.good { color: #4caf50; }
+.kpi-value.warn { color: #ff9800; }
+.kpi-value.bad  { color: #f44336; }
+
+.kpi-bench {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.hidden {
+  display: none;
+}
