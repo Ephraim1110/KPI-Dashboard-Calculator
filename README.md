@@ -47,7 +47,7 @@ Imaginons une machine qui doit tourner 8h par jour (480 min).
 | **Qualité** | Pièces conformes / Pièces produites | 850 / 880 = **96.6%** |
 | **TRS** | 87.5% × 88% × 96.6% | = **74.3%** |
 
-> 🎯 **Objectif industrie : TRS > 85%**
+> **Objectif industrie : TRS > 85%**
 > Un TRS de 85% signifie que la machine est utilisée à 85% de son potentiel maximum.
 > En dessous de 65% → situation critique, action immédiate requise.
 
@@ -63,7 +63,7 @@ PPM = (Nb défauts / Nb pièces) × 1 000 000
 ```
 > C'est le nombre de pièces défectueuses pour 1 million produites.
 > **Exemple :** 30 défauts sur 1000 pièces = 30 000 PPM
-> 🎯 Objectif : le plus bas possible (< 500 PPM en industrie automobile)
+>  Objectif : le plus bas possible (< 500 PPM en industrie automobile)
 
 #### FPY — First Pass Yield (Rendement au premier coup)
 ```
@@ -71,21 +71,21 @@ FPY = (Pièces conformes du 1er coup / Total pièces) × 100
 ```
 > C'est le % de pièces qui sortent bonnes **du premier coup**, sans retouche.
 > **Exemple :** Une pièce qui doit être retouchée avant d'être bonne n'est PAS comptée dans le FPY.
-> 🎯 Objectif : > 95%
+> Objectif : > 95%
 
 #### Taux de rebut
 ```
 Taux de rebut = (Pièces rebutées / Total pièces) × 100
 ```
 > Une pièce rebutée = une pièce irrécupérable, à jeter.
-> 🎯 Objectif : < 1%
+> Objectif : < 1%
 
 #### Taux de retouche
 ```
 Taux de retouche = (Pièces retouchées / Total pièces) × 100
 ```
 > Une pièce retouchée = une pièce qui a nécessité une correction avant d'être bonne.
-> 🎯 Objectif : < 2%
+> Objectif : < 2%
 
 ---
 
@@ -98,7 +98,7 @@ Ces indicateurs mesurent la performance de vos fournisseurs.
 OTD = (Livraisons à l'heure / Total livraisons) × 100
 ```
 > **Exemple :** Un fournisseur livre 185 commandes à l'heure sur 200 → OTD = 92.5%
-> 🎯 Objectif : > 95%
+> Objectif : > 95%
 > Si un fournisseur livre en retard, toute la chaîne de production est impactée.
 
 #### PPM fournisseur
@@ -112,7 +112,7 @@ PPM fournisseur = (Pièces défectueuses reçues / Total pièces reçues) × 1 0
 Taux de service = (Commandes complètes / Total commandes) × 100
 ```
 > Une commande complète = livrée en totalité, sans article manquant.
-> 🎯 Objectif : > 95%
+>  Objectif : > 95%
 
 ---
 
@@ -126,14 +126,14 @@ Efficacité CAPA = (Actions efficaces / Actions clôturées) × 100
 ```
 > CAPA = Corrective And Preventive Action (Actions correctives et préventives)
 > Une action est "efficace" si le problème ne réapparaît pas après sa mise en place.
-> 🎯 Objectif : > 80%
+>  Objectif : > 80%
 
 #### Taux de clôture
 ```
 Taux de clôture = (Actions clôturées / Actions totales) × 100
 ```
 > Mesure si les actions d'amélioration sont bien finalisées dans les délais.
-> 🎯 Objectif : > 80%
+>  Objectif : > 80%
 
 #### Taux de récurrence
 ```
@@ -141,60 +141,18 @@ Taux de récurrence = (Problèmes récurrents / Total problèmes) × 100
 ```
 > Un problème récurrent = un problème qui revient malgré une action corrective.
 > Plus ce taux est bas, plus les actions correctives sont efficaces.
-> 🎯 Objectif : < 10%
+>  Objectif : < 10%
 
 #### Taux de mise en œuvre des idées (Kaizen)
 ```
 Taux idées = (Idées mises en œuvre / Idées proposées) × 100
 ```
 > Le Kaizen = amélioration continue par petites étapes, grâce aux idées du terrain.
-> 🎯 Objectif : > 70%
+>  Objectif : > 70%
 
 ---
 
-## 🏗️ Structure du projet
-
-```
-KPI-Dashboard-Calculator/
-│
-├── index.html              ← Interface principale
-├── style.css               ← Design dark mode
-├── main.js                 ← Logique d'affichage et navigation
-├── README.md               ← Documentation
-│
-└── Functions/
-    ├── trs.js              ← Calculs TRS (Disponibilité, Performance, Qualité)
-    ├── qualite.js          ← Calculs Qualité produit (PPM, FPY, rebut...)
-    ├── fournisseur.js      ← Calculs Fournisseurs (OTD, taux de service...)
-    └── amelioration.js     ← Calculs Amélioration continue (CAPA, Kaizen...)
-```
-
----
-
-## 🚀 Installation & utilisation
-
-### Option 1 — Ouvrir directement
-1. Clone le repo : `git clone https://github.com/Ephraim1110/KPI-Dashboard-Calculator.git`
-2. Ouvre `index.html` dans ton navigateur
-
-### Option 2 — Avec Live Server (VS Code)
-1. Installe l'extension **Live Server** sur VS Code
-2. Clic droit sur `index.html` → **Open with Live Server**
-
----
-
-## 🛠️ Technologies utilisées
-
-| Technologie | Usage |
-|---|---|
-| HTML5 | Structure de l'interface |
-| CSS3 | Design dark mode responsive |
-| JavaScript (Vanilla) | Calculs et logique d'affichage |
-| GitHub Pages | Déploiement en ligne |
-
----
-
-## 📚 Références & normes
+##  Références & normes
 
 - **ISO 22514** — Statistiques appliquées, capabilité des processus
 - **Lean Manufacturing** — TRS, 5S, Kaizen, SMED
@@ -203,7 +161,7 @@ KPI-Dashboard-Calculator/
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
 **Ephraim GOUSSANOU**
 Ingénieur Génie Industriel — Méthodes & Industrie 4.0
